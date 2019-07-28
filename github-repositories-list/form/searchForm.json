@@ -1,0 +1,37 @@
+{
+  "className": "py-4",
+  "schema": {
+    "type": "object",
+    "description": "Search in Github",
+    "required": [
+      "search"
+    ],
+    "properties": {
+      "search": {
+        "title": "Search",
+        "type": "string"
+      },
+      "sort": {
+        "type": "string",
+        "title": "Sort By",
+        "enum": [
+          "stars",
+          "forks",
+          "help-wanted-issues",
+          "updated"
+        ],
+        "enumNames": [
+          "Most stared",
+          "Most forked",
+          "Most help wanted issues",
+          "Recent updated"
+        ]
+      }
+    }
+  },
+  "uiSchema": {
+    "search": {
+      "ui:placeholder": "The content to search"
+    }
+  }
+}

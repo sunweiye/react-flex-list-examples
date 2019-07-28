@@ -1,0 +1,45 @@
+{
+  "name": "react-flex-list-examples",
+  "version": "0.1.0",
+  "description": "The examples of using react-flex-list",
+  "author": "Weiye Sun",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-flex-list": "git+https://github.com/sunweiye/react-flex-list.git",
+    "react-jsonschema-form": "^1.7.0",
+    "react-jsonschema-form-extensions": "git+https://github.com/sunweiye/react-jsonschema-form-extensions.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-react": "^7.14.2",
+    "jest": "^24.8.0",
+    "react-hot-loader": "^4.12.6",
+    "react-test-renderer": "^16.8.6",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build:lib": "NODE_ENV=production babel -d lib/ github-repositories-list/",
+    "build:module": "NODE_ENV=production babel -d module/ github-repositories-list/",
+    "start": "NODE_ENV=development webpack-dev-server --config ./webpack.config.dev.js --content-base=web --inline --watch --hot",
+    "test:jest": "jest",
+    "browserslist": "browserslist"
+  }
+}

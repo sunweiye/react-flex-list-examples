@@ -1,0 +1,10 @@
+[production]
+> 0.2%
+not dead
+not op_mini all
+ie 10
+
+[development]
+last 3 chrome version
+last 3 firefox version
+last 3 safari version
